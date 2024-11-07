@@ -1,0 +1,12 @@
+hl7_fhir_mediator/
+├── config/
+│   └── mediator.json
+├── src/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── mediator.py
+│   ├── hl7_parser.py
+│   ├── fhir_converter.py
+│   └── fhir_client.py
+├── requirements.txt
+└── README.md 

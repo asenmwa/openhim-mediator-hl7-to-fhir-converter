@@ -1,0 +1,52 @@
+{
+    "urn": "urn:mediator:tutorial_scaffold",
+    "version": "1.0.0",
+    "name": "Lab Results Mediator",
+    "description": "HL7 Lab Results OpenHIMMediator for FHIR",
+    "defaultChannelConfig": [
+      {
+        "name": "Lab Results Mediator",
+        "urlPattern": "^/lab-results$",
+        "routes": [
+          {
+            "name": "Lab Results Mediator HL7 Route",
+            "host": "lab-results",
+            "path": "/",
+            "port": "3000",
+            "primary": true,
+            "type": "http"
+          }
+        ],
+        "allow": ["admin"],
+        "methods": ["GET", "POST"],
+        "type": "http"
+      },
+      {
+        "name": "HL7 to FHIR Channel",
+        "urlPattern": "^/lab-results$",
+        "routes": [
+          {
+            "name": "HL7 to FHIR Route",
+            "host": "lab-results",
+            "path": "/hl7",
+            "port": "3000",
+            "primary": true,
+            "type": "http"
+          }
+        ],
+        "allow": ["admin"],
+        "methods": ["POST"],
+        "type": "http"
+      }
+    ],
+    "endpoints": [
+      {
+        "name": "Lab Results Mediator Endpoint",
+        "host": "lab-results",
+        "path": "/",
+        "port": "3000",
+        "primary": true,
+        "type": "http"
+      }
+    ]
+  }

@@ -1,0 +1,31 @@
+{
+  "urn": "urn:mediator:hl7-fhir-converter",
+  "version": "1.0.0",
+  "name": "HL7 to FHIR Converter Mediator",
+  "description": "A mediator to convert HL7v2 messages to FHIR resources",
+  "defaultChannelConfig": [
+    {
+      "name": "HL7 to FHIR Converter",
+      "urlPattern": "^/hl7$",
+      "routes": [
+        {
+          "name": "HL7 to FHIR Route",
+          "host": "localhost",
+          "port": 3000,
+          "path": "/hl7"
+        }
+      ],
+      "allow": ["admin"]
+    }
+  ],
+  "endpoints": [
+    {
+      "name": "HL7 Endpoint",
+      "host": "localhost",
+      "path": "/hl7",
+      "port": 3000,
+      "primary": true,
+      "type": "http"
+    }
+  ]
+} 

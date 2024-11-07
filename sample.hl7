@@ -1,0 +1,14 @@
+MSH|^~\&|LAB|N|||20240410132406+0200||ORU^R01|250946.1|P||||AL|NE|
+PID|1|L00004851|NM00004851^^^^MR^N~91030512345^^^^SS^N~L1-B20240403083723824^^^^PI^N~L00004851^^^^HUB^N||FirstName^LastName||20240305|M||||||||||N000005284|
+LOC|0304ARV|Okuryangava ARV Clinic|
+OBR|1|9260^LAB|9260^LAB|VIRAL^HIV-1 Viral Load^L|||202404021115|||||||202404030838||HAIA00123^KHOMAS^MIN OF HEALTH^^^^^^^^^^XX||010012345||||||LAB|F||^^^^^R|
+PRD|HAIA00123|
+OBX|1|ST|VIRALV^HIV-1 Viral Load Value^L|1|318.00|RNAc/ml||||A^S|F|||202404051503|0011^Molecular Medicine^L|
+NTE|1||PLEASE NOTE: This result was generated from Hologic Aptima|
+NTE|2||HIV-1 Quant Dx Assay on the Panther analyzer. The assay has|
+NTE|3||a linear range of 30-10,000 000 RNA copies/ml. Log value is|
+NTE|4||a logarithmically transformed value from copies/ml to fit|
+NTE|5||linearity of absorbance in the process of quantitation.|
+NTE|6||This result should be interpreted in conjunction with|
+NTE|7||the CD4 counts and clinical status. A change in log value|
+NTE|8||of > 0.5 from previous result is clinically significant.|

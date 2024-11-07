@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  mediator:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - OPENHIM_URL=${OPENHIM_URL:-https://openhim-core:8080}
+      - OPENHIM_USERNAME=${OPENHIM_USERNAME:-root@openhim.org}
+      - OPENHIM_PASSWORD=${OPENHIM_PASSWORD:-password}
+      - FHIR_SERVER_URL=${FHIR_SERVER_URL:-http://hapi-fhir:8080/fhir}
+    volumes:
+      - ./src:/app/src
+      - ./config:/app/config
+    networks:
+      - openhim
+      - hapi-network
+
+networks:
+  openhim:
+    external: true
+    name: openhim_openhim
+  hapi-network:
+    external: true
+    name: openhim_hapi-network

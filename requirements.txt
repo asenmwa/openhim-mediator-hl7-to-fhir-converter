@@ -1,5 +1,5 @@
 flask==2.3.3
 python-dotenv==1.0.0
-requests==2.32.2
+requests==2.32.4
 hl7apy==1.3.4
 fhir.resources==6.5.0
